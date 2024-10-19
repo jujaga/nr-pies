@@ -1,0 +1,42 @@
+---
+data_management_roles:
+  data_custodian: Christian Evans
+  data_steward: Fraser Marshall
+  product_owner: Sharolyn Hurley
+product_external_dependencies:
+  notification_standard: []
+product_information:
+  api_specifications: []
+  business_capabilities_custom: Documentation
+  business_capabilities_standard:
+    - Communications
+    - Resource Management
+    - Other
+  ministry:
+    - Water, Land and Resource Stewardship
+  product_acronym: PIES
+  product_description: An easy as pie way to exchange standardized permitting information.
+  product_name: Permitting Interoperability Exchange Specification
+  product_status: maturing
+  product_urls:
+    - https://bcgov.github.io/nr-permit-interoperability-exchange-specification
+  program_area: Permitting and Data Solutions Branch
+product_technology_information:
+  backend_frameworks:
+    - name: Docusaurus
+      version: 3.5.2
+  backend_languages_version:
+    - name: TypeScript
+      version: 5.6.3
+  ci_cd_tools:
+    - GitHub-Actions
+  frontend_frameworks:
+    - name: React
+      version: 18.0.0
+  frontend_languages:
+    - name: TypeScript
+      version: 5.6.3
+  hosting_platforms:
+    - Other
+  hosting_platforms_custom: GitHub Pages
+version: 1
