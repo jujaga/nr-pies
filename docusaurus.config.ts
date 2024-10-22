@@ -50,24 +50,24 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/bcgov/nr-pies/tree/main/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
+        // To enable the blog, remove the blog: false line and uncomment below
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ["rss", "atom"],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: "https://github.com/bcgov/nr-pies/tree/main/",
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: "warn",
+        //   onInlineAuthors: "warn",
+        //   onUntruncatedBlogPosts: "warn",
+        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -81,7 +81,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/BCID_H_rgb_rev.png",
+    image: "img/BCID_H_rgb_pos.png",
     announcementBar: {
       id: "announcement",
       content: "The PIES specification is still baking... 🥧",
@@ -116,7 +116,7 @@ const config: Config = {
         //   position: "right",
         //   label: "Tutorial",
         // },
-        { to: "/blog", label: "Blog", position: "right" },
+        // { to: "/blog", label: "Blog", position: "right" },
         {
           href: "https://github.com/bcgov/nr-permit-interoperability-exchange-specification",
           position: "right",
