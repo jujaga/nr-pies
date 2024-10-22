@@ -17,14 +17,12 @@ concurrency:
 
 jobs:
   build-deploy:
-    name: Build Docusaurus & Deploy to GitHub Pages
+    name: Build and Deploy to GitHub Pages
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
       pull-requests: write
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,8 +39,13 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Build website
         if: github.event.action != 'closed'
+        env:
+          BASE_URL: /nr-pies/pr-preview/pr-${{ github.event.pull_request.number }}
         run: npm run build
-      - name: Deploy preview
+      - name: Deploy to/Cleanup GitHub Pages
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto

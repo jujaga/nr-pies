@@ -21,10 +21,11 @@
 <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
 - [ ] I have read the [CONTRIBUTING](CONTRIBUTING.md) doc
-- [ ] I have checked that unit tests pass locally with my changes
-- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] I have checked that the site is buildable with my changes
+- [ ] I have ensured there are no visible errors in the JSON schema (if edited)
 - [ ] I have added necessary documentation (if appropriate)
 
 ## Further comments
 
-<!-- If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc... -->
+<!-- If this is a relatively large or complex change, kick off the discussion by explaining -->
+<!-- why you chose the solution you did and what alternatives you considered, etc... -->
