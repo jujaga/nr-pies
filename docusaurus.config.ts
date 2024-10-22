@@ -98,6 +98,12 @@ const config: Config = {
         srcDark: "img/BCID_H_rgb_rev.png",
       },
       items: [
+        // {
+        //   type: "docsVersionDropdown",
+        //   position: "left",
+        //   // dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
+        //   dropdownActiveClassDisabled: true,
+        // },
         {
           type: "docSidebar",
           sidebarId: "docSidebar",
@@ -151,8 +157,8 @@ const config: Config = {
         },
         {
           label: "Docusaurus",
-          to: "docs/docusaurus/intro"
-        }
+          to: "docs/docusaurus/intro",
+        },
       ],
       copyright: `© ${new Date().getFullYear()} Government of British Columbia. Built with Docusaurus.`,
     },
