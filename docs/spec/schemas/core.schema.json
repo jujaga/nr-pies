@@ -1,6 +1,6 @@
 {
-  "$id": "https://github.com/bcgov/nr-permitting-data-spec/tree/main/#/schemas/definitions/core-permit-schema.json",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bcgov/nr-pies/blob/main/docs/spec/schemas/core.schema.json",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "title": "Core Permitting Schema",
   "description": "This data specification provides a standard list of values for Natural Resource Sector core permitting data.",
   "type": "object",
