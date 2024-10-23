@@ -10,6 +10,8 @@ tags:
 
 ## Getting Started
 
+abcd
+
 Welcome! This site repository contains common schemas related to permitting in the Natural Resources Sector for the Province of British Columbia. The intent of these are to standardize the way permitting in the Natural Resource Sector is described as data to enable quality and interoperability.
 
 Hosting this specification in the open will encourage collaboration, adoption and enable versioning.
