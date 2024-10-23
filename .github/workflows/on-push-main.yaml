@@ -39,4 +39,4 @@ jobs:
           folder: build
           clean-exclude: pr-preview/
           single-commit: true
-          force: false
+          force: true
