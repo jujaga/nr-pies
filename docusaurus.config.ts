@@ -165,7 +165,11 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ["mermaid"],
     },
+    mermaid: {
+      theme: {light: 'default', dark: 'dark'},
+    }
   } satisfies Preset.ThemeConfig,
 
   // Allows use of @theme/JSONSchemaEditor or @theme/JSONSchemaViewer

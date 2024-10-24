@@ -88,6 +88,10 @@ footer {
     no-repeat;
 }
 
+.hero--primary {
+  --ifm-hero-background-color: var(--ifm-color-primary-dark);
+}
+
 /**
  * Dark Mode
  */
