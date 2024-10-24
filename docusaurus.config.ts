@@ -22,7 +22,7 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -50,23 +50,27 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/jujaga/nr-pies/tree/main/'
+          editUrl: 'https://github.com/jujaga/nr-pies/tree/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          tags: 'tags.yaml',
+          onInlineTags: 'throw'
         },
         blog: false,
         // To enable the blog, remove the blog: false line and uncomment below
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
-        //     type: ["rss", "atom"],
-        //     xslt: true,
+        //     type: ['rss', 'atom'],
+        //     xslt: true
         //   },
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
-        //   editUrl: "https://github.com/jujaga/nr-pies/tree/main/",
+        //   editUrl: 'https://github.com/jujaga/nr-pies/tree/main/',
         //   // Useful options to enforce blogging best practices
-        //   onInlineTags: "warn",
-        //   onInlineAuthors: "warn",
-        //   onUntruncatedBlogPosts: "warn",
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn'
         // },
         theme: {
           customCss: './src/css/custom.css'
@@ -99,10 +103,10 @@ const config: Config = {
       },
       items: [
         // {
-        //   type: "docsVersionDropdown",
-        //   position: "left",
+        //   type: 'docsVersionDropdown',
+        //   position: 'left',
         //   // dropdownItemsAfter: [{ to: "/versions", label: "All versions" }],
-        //   dropdownActiveClassDisabled: true,
+        //   dropdownActiveClassDisabled: true
         // },
         {
           type: 'docSidebar',
@@ -111,12 +115,12 @@ const config: Config = {
           label: 'Docs'
         },
         // {
-        //   type: "docSidebar",
-        //   sidebarId: "tutorialSidebar",
-        //   position: "right",
-        //   label: "Tutorial",
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'right',
+        //   label: 'Tutorial'
         // },
-        // { to: "/blog", label: "Blog", position: "right" },
+        // { to: '/blog', label: 'Blog', position: 'right' },
         {
           href: 'https://github.com/jujaga/nr-pies',
           position: 'right',

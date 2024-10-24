@@ -1,0 +1,14 @@
+---
+# All tag elements should be defined in kebab-case. Aim for singular word tags
+# if possible, opting for more descriptive label strings instead
+business:
+  label: 'Business'
+  description: 'Content related to business cases and rationale'
+
+developer:
+  label: 'Developer'
+  description: 'Content related to technical structure and implementation'
+
+executive:
+  label: 'Executive'
+  description: 'Content related to policies and strategic alignment'

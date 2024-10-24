@@ -4,8 +4,8 @@ title: Getting Started
 description: Introduction to the Natural Resource Sector PIES
 sidebar_position: 1
 tags:
-  - Business
-  - Exeutive
+  - business
+  - executive
 ---
 
 ## Getting Started
