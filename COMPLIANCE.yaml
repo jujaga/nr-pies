@@ -3,7 +3,7 @@ description: This document is used to track a projects PIA and STRA compliance.
 spec:
   - name: PIA
     status: TBD
-    last-updated: "2024-10-16T00:00:00.000Z"
+    last-updated: '2024-10-16T00:00:00.000Z'
   - name: STRA
     status: TBD
-    last-updated: "2024-10-16T00:00:00.000Z"
+    last-updated: '2024-10-16T00:00:00.000Z'

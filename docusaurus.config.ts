@@ -1,56 +1,56 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
-import type * as Preset from "@docusaurus/preset-classic";
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: "Permitting Interoperability Exchange Specification",
+  title: 'Permitting Interoperability Exchange Specification',
   tagline:
-    "An easy as pie way to exchange standardized permitting information. 🥧",
-  favicon: "img/favicon.ico",
+    'An easy as pie way to exchange standardized permitting information. 🥧',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: "https://jujaga.github.io",
+  url: 'https://jujaga.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE_URL || "/",
+  baseUrl: process.env.BASE_URL || '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "jujaga", // Usually your GitHub org/user name.
-  projectName: "nr-pies", // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  organizationName: 'jujaga', // Usually your GitHub org/user name.
+  projectName: 'nr-pies', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en']
   },
 
   plugins: [
     [
-      require.resolve("docusaurus-lunr-search"),
+      require.resolve('docusaurus-lunr-search'),
       {
-        enableHighlight: true,
-      },
+        enableHighlight: true
+      }
     ],
-    "@docusaurus/theme-mermaid",
+    '@docusaurus/theme-mermaid'
   ],
 
   presets: [
     [
-      "classic",
+      'classic',
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/bcgov/nr-pies/tree/main/",
+          editUrl: 'https://github.com/jujaga/nr-pies/tree/main/'
         },
         blog: false,
         // To enable the blog, remove the blog: false line and uncomment below
@@ -62,40 +62,40 @@ const config: Config = {
         //   },
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
-        //   editUrl: "https://github.com/bcgov/nr-pies/tree/main/",
+        //   editUrl: "https://github.com/jujaga/nr-pies/tree/main/",
         //   // Useful options to enforce blogging best practices
         //   onInlineTags: "warn",
         //   onInlineAuthors: "warn",
         //   onUntruncatedBlogPosts: "warn",
         // },
         theme: {
-          customCss: "./src/css/custom.css",
-        },
-      } satisfies Preset.Options,
-    ],
+          customCss: './src/css/custom.css'
+        }
+      } satisfies Preset.Options
+    ]
   ],
 
   markdown: {
-    mermaid: true,
+    mermaid: true
   },
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/BCID_H_rgb_pos.png",
+    image: 'img/BCID_H_rgb_pos.png',
     announcementBar: {
-      id: "announcement",
-      content: "The PIES specification is still baking... 🥧",
-      backgroundColor: "#FEF1D8",
-      textColor: "#000000",
-      isCloseable: true,
+      id: 'announcement',
+      content: 'The PIES specification is still baking... 🥧',
+      backgroundColor: '#FEF1D8',
+      textColor: '#000000',
+      isCloseable: true
     },
     navbar: {
       hideOnScroll: false,
-      title: "NR-PIES",
+      title: 'NR-PIES',
       logo: {
-        alt: "Government of B.C.",
-        src: "img/BCID_H_rgb_pos.png",
-        srcDark: "img/BCID_H_rgb_rev.png",
+        alt: 'Government of B.C.',
+        src: 'img/BCID_H_rgb_pos.png',
+        srcDark: 'img/BCID_H_rgb_rev.png'
       },
       items: [
         // {
@@ -105,10 +105,10 @@ const config: Config = {
         //   dropdownActiveClassDisabled: true,
         // },
         {
-          type: "docSidebar",
-          sidebarId: "docSidebar",
-          position: "right",
-          label: "Docs",
+          type: 'docSidebar',
+          sidebarId: 'docSidebar',
+          position: 'right',
+          label: 'Docs'
         },
         // {
         //   type: "docSidebar",
@@ -118,62 +118,62 @@ const config: Config = {
         // },
         // { to: "/blog", label: "Blog", position: "right" },
         {
-          href: "https://github.com/bcgov/nr-permit-interoperability-exchange-specification",
-          position: "right",
-          className: "header-github-logo",
-          "aria-label": "GitHub Repo",
-        },
-      ],
+          href: 'https://github.com/jujaga/nr-pies',
+          position: 'right',
+          className: 'header-github-logo',
+          'aria-label': 'GitHub Repo'
+        }
+      ]
     },
     footer: {
       links: [
         {
-          label: "Home",
-          href: "https://www2.gov.bc.ca/gov/content/home",
+          label: 'Home',
+          href: 'https://www2.gov.bc.ca/gov/content/home'
         },
         {
-          label: "About gov.bc.ca",
-          href: "https://www2.gov.bc.ca/gov/content/about-gov-bc-ca",
+          label: 'About gov.bc.ca',
+          href: 'https://www2.gov.bc.ca/gov/content/about-gov-bc-ca'
         },
         {
-          label: "Disclaimer",
-          href: "https://www2.gov.bc.ca/gov/content/home/disclaimer",
+          label: 'Disclaimer',
+          href: 'https://www2.gov.bc.ca/gov/content/home/disclaimer'
         },
         {
-          label: "Privacy",
-          href: "https://www2.gov.bc.ca/gov/content/home/privacy",
+          label: 'Privacy',
+          href: 'https://www2.gov.bc.ca/gov/content/home/privacy'
         },
         {
-          label: "Accessibility",
-          href: "https://www2.gov.bc.ca/gov/content/home/accessible-government",
+          label: 'Accessibility',
+          href: 'https://www2.gov.bc.ca/gov/content/home/accessible-government'
         },
         {
-          label: "Copyright",
-          href: "https://www2.gov.bc.ca/gov/content/home/copyright",
+          label: 'Copyright',
+          href: 'https://www2.gov.bc.ca/gov/content/home/copyright'
         },
         {
-          label: "Contact us",
-          href: "https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services",
+          label: 'Contact us',
+          href: 'https://www2.gov.bc.ca/gov/content/home/get-help-with-government-services'
         },
         {
-          label: "Docusaurus",
-          to: "docs/docusaurus/intro",
-        },
+          label: 'Docusaurus',
+          to: 'docs/docusaurus/intro'
+        }
       ],
-      copyright: `© ${new Date().getFullYear()} Government of British Columbia. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Government of British Columbia. Built with Docusaurus.`
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ["mermaid"],
+      additionalLanguages: ['mermaid']
     },
     mermaid: {
-      theme: {light: 'default', dark: 'dark'},
+      theme: { light: 'default', dark: 'dark' }
     }
   } satisfies Preset.ThemeConfig,
 
   // Allows use of @theme/JSONSchemaEditor or @theme/JSONSchemaViewer
-  themes: ["docusaurus-json-schema-plugin"],
+  themes: ['docusaurus-json-schema-plugin']
 };
 
 export default config;

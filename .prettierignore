@@ -14,9 +14,9 @@
 .env
 .env.local
 .env.*.local
-/coverage
-/dist
-/dist-ssr
+coverage
+dist
+dist-ssr
 
 # Log files
 logs
